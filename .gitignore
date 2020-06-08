@@ -1,0 +1,14 @@
+bin/
+obj/
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+.idea/.idea.EasyBinaryFileEncode/.idea/.name
+.idea/.idea.EasyBinaryFileEncode/.idea/encodings.xml
+.idea/.idea.EasyBinaryFileEncode/.idea/indexLayout.xml
+.idea/.idea.EasyBinaryFileEncode/.idea/misc.xml
+.idea/.idea.EasyBinaryFileEncode/.idea/vcs.xml
+.idea/.idea.EasyTextEncyption/.idea/encodings.xml
+.idea/.idea.EasyTextEncyption/.idea/indexLayout.xml
+.idea/.idea.EasyTextEncyption/.idea/misc.xml
+.idea/.idea.EasyTextEncyption/.idea/vcs.xml
