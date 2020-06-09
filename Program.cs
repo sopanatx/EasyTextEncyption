@@ -1,23 +1,26 @@
 ﻿using System;
 using System.Text;
 
-namespace EasyBinaryFileEncode
+namespace EasyTextEncyption
 {
    
     internal class Program
     {
         private static byte[] Encyption(byte[] data)
         {
+            Console.Write(" Debug >> :");
             for (int i = 0; i < data.Length; i++)
             {
                 data[i] ^= 0x11;
+               
+                Console.Write("  {0}  ",data[i]);
             }
             
             return data;
         }
         private static byte[] Decyption(byte[] data)
         {
-            for (int i = data.Length-1; i > -1 ; i--)
+            for (int i = 0; i < data.Length; i++)
             {
                 data[i] ^= 0x11;
             }
