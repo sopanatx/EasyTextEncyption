@@ -13,7 +13,7 @@ namespace EasyTextEncyption
             {
                 data[i] ^= 0x11;
                
-                Console.Write("  {0}  ",data[i]);
+                Console.Write(" {0} ",data[i]);
             }
             
             return data;
@@ -47,6 +47,11 @@ namespace EasyTextEncyption
                     RawTextByte = Encoding.ASCII.GetBytes(RawText);
                     getEncode = Encyption(RawTextByte);
                     Encoded = Encoding.ASCII.GetString(getEncode);
+                    using (System.IO.StreamWriter file =
+                        new System.IO.StreamWriter("MyText.etb", true))
+                    {
+                        file.WriteLine(Encoded);
+                    }
                     break;
                 case "2":
                         RawTextByte = Encoding.ASCII.GetBytes(RawText);
