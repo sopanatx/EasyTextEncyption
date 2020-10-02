@@ -48,7 +48,7 @@ namespace EasyTextEncyption
                     getEncode = Encyption(RawTextByte);
                     Encoded = Encoding.ASCII.GetString(getEncode);
                     using (System.IO.StreamWriter file =
-                        new System.IO.StreamWriter("MyText.etb", true))
+                        new System.IO.StreamWriter("MyText.txt", true))
                     {
                         file.WriteLine(Encoded);
                     }
@@ -63,7 +63,7 @@ namespace EasyTextEncyption
                 
             }
             
-            Console.WriteLine("Raw Text: {0}",RawText);
+            Console.WriteLine("Input Text: {0}",RawText);
             Console.WriteLine("Encoding Text: {0}",Encoded);
         }
     }
